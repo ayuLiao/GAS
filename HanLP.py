@@ -9,7 +9,7 @@ sys.setdefaultencoding('utf8')
 path = os.getcwd();
 # print(path)
 startJVM(getDefaultJVMPath(), "-Djava.class.path="+path+"/hanlp-portable-1.3.4.jar:"+path+"/hanlp", "-Xms1g",
-         "-Xmx1g")  # 启动JVM，Linux需替换分号;为冒号:
+         "-Xmx1g")  # 启动JVM，Window下需替换分号;为冒号:
 HanLP = JClass('com.hankcs.hanlp.HanLP')
 # 中文分词
 # print(HanLP.segment('你好，欢迎在Python中调用HanLP的API'))
